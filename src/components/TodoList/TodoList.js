@@ -1,13 +1,10 @@
-import React, { useEffect } from 'react'
-import { v4 } from 'uuid';
+import React from 'react'
 import TodoFooter from '../TodoFooter/TodoFooter'
 import "./TodoList.css"
 
 function TodoList({
   todos, setTodos
 }) {
-
-
 
   const updateTask = (id) => {
     let updatedTasks = todos.map((todo) => {
@@ -32,14 +29,13 @@ function TodoList({
   return (
     <div className="todolist-container">
       <div className="todos-container">
-        <div >
+        <div>
           {
             todos.map((todo, index) => (
               <div
-
-                data-testid='todo-item'
-                key={v4()}
-                className={`todo-item ${todo.completed ? "todo-item-active" : ''}`}
+                key={`todo-item-${index}`}
+                data-testid="todo-item"
+                className={`todo-item ${todo.completed ? "todo-item-active" : ""}`}
                 onClick={() => updateTask(todo.id)}
               >
                 {todo.task}
