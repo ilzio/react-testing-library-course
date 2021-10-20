@@ -1,3 +1,10 @@
+# Credits
+
+This repo contains code mixing two different youtube tutorials
+
+- React Testing Library Tutorial Crash Course by [The net ninja](https://www.youtube.com/watch?v=7dTTFW7yACQ&list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ)
+- Don't Mock Fetch (or Axios): Use Mock Service Worker and Test Like a User by [Leigh Halliday](https://www.youtube.com/watch?v=v77fjkKQTH0)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
